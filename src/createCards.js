@@ -1,4 +1,5 @@
-function createManagerCard (manager) {
+//create manager card, only on required. Engineer and intern cards will accept arrays & create html for each entry
+function createManagerCard(manager) {
     const managerCard = `<div class="card">
     <div class="card-title">
         <h3 class="name">${manager.name}</h3>
@@ -10,13 +11,14 @@ function createManagerCard (manager) {
         <p>Office Number: <span class="officeNumber">${manager.officeNumber}</span></p>
     </div>
 </div>`
-return managerCard
+return managerCard;
 }
 
-function createEngineerCards (engineers) {
-    let engineerCards = ``
+//pass engineers array to create card for each engineer
+function createEngineerCards(engineers) {
+    let engineerCards = ``;
     for(let i = 0; i < engineers.length; i++) {
-        let engineer = engineers[i]
+        let engineer = engineers[i];
         let card = `<div class="card">
         <div class="card-title">
             <h3 class="name">${engineer.name}</h3>
@@ -28,16 +30,16 @@ function createEngineerCards (engineers) {
             <p>Github: <span class="Github"><a href="https://www.github.com/${engineer.github}"  target="_blank">${engineer.github}</a></span></p>
         </div>
     </div>`
-    engineerCards += card
+    engineerCards += card;
     }
-    return engineerCards
+    return engineerCards;
 }
 
-
-function createInternCards (interns) {
+//pass interns array into intern cards.
+function createInternCards(interns) {
     let internCards = ``
     for(let i = 0; i < interns.length; i++) {
-        let intern = interns[i]
+        let intern = interns[i];
         let card = `<div class="card">
         <div class="card-title">
             <h3 class="name">${intern.name}</h3>
@@ -49,11 +51,11 @@ function createInternCards (interns) {
             <p>School: <span class="Github">${intern.school}</span></p>
         </div>
     </div>`
-
-    internCards += card
+    //add each card to intern cards div
+    internCards += card;
     }
-    return internCards
+    return internCards;
 }
 
-
-module.exports = { createManagerCard, createEngineerCards, createInternCards }
+//make all create functions available as exports
+module.exports = { createManagerCard, createEngineerCards, createInternCards };
