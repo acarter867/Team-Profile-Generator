@@ -1,5 +1,4 @@
-function createHtml(managerCard, engineerCards, internCards) {
-    const htmlTemplate = `<!DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -16,27 +15,33 @@ function createHtml(managerCard, engineerCards, internCards) {
             <div class="manager">
                 <div class="manager-card">
                     <h2>Manager</h2>
-                    ${managerCard}
+                    <div class="card">
+    <div class="card-title">
+        <h3 class="name">asdf</h3>
+        <h4 class="type">Manager</h4>
+    </div>
+    <div class="card-body">
+        <p>ID: <span class="ID">dasf</span></p>
+        <p>Email: <span class="Email"><a href="mailto:asdf">asdf</a></span></p>
+        <p>Office Number: <span class="officeNumber">sdaf</span></p>
+    </div>
+</div>
                 </div>
             </div>
             <div class="employees">
                 <div class="engineers">
                     <h2>Engineers</h2>
                     <div class="engineer-cards">
-                        ${engineerCards}
+                        
                     </div>
                 </div>
                 <div class="interns">
                     <h2>Interns</h2>
                     <div class="intern-cards">
-                        ${internCards}
+                        
                     </div>
                 </div>
             </div>
         </main>
     </body>
-    </html>`
-    return htmlTemplate
-}
-
-module.exports = createHtml
+    </html>
