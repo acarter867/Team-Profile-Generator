@@ -118,11 +118,11 @@ function addEmployee() {
                 console.log(employees);
                 for (let i = 0; i < employees.length; i++) {
                     const currEmployee = employees[i]
-                    if (currEmployee.type === "Engineer") {
-                        const engineer = new Engineer(e.name, e.id, e.email, e.github)
+                    if (currEmployee.role === "Engineer") {
+                        const engineer = new Engineer(currEmployee.name, currEmployee.id, currEmployee.email, currEmployee.github)
                         engineers.push(engineer)
-                    } else if (currEmployee.type === "Intern") {
-                        const intern = new Intern(e.name, e.id, e.email, e.school)
+                    } else if (currEmployee.role === "Intern") {
+                        const intern = new Intern(currEmployee.name, currEmployee.id, currEmployee.email, currEmployee.school)
                         interns.push(intern)
                     }
                 }
