@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 89, 89);
+    color: white;
+    height: 10rem;
+    font-size: 2.4rem;
+    box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.15);
+}
+
+main {
+    display: flex;
+}
+
+
+.engineers, .interns {
+    margin: 2rem;
+    text-align: center;
+}
+
+.engineer-cards, .intern-cards, .manager-card {
+    width: 100%;
+    display: flex;
+    margin: 2rem;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+h2 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    box-shadow: 5px 5px 20px rgba(110, 6, 6, 0.85);
+    width: 35rem;
+    height: 40rem;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+}
+
+.card-title {
+    color: white;
+    background: rgb(0, 51, 255);
+    padding: 1rem;
+}
+
+h3 {
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+
+h4 {
+    font-weight: 300;
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+
+.card-body {
+    padding: 8rem 4rem;
+    font-size: 2rem;
+}
+
+p {
+    text-align: left;
+    width: 100%;
+    font-weight: 500;
+    padding-bottom: 4rem;
+}
+
+span {
+    font-size: 1.6rem;
+}
